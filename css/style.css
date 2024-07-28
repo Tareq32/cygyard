@@ -176,6 +176,10 @@ body{
     line-height: normal;
 }
 
+.burger svg{
+    display: none;
+}
+
 @media only screen and (max-width: 767px){
     .container{
         max-width: 700px;
@@ -211,6 +215,23 @@ body{
 
     .Contact, .bar{
         display: none;
+    }
+
+    .show{
+        display: flex !important;
+    }
+    .bar.show{ 
+        height: 50%;
+        position: fixed;
+        overflow: hidden;
+        width: 25%;
+        RIGHT: 2%;
+        top: 15%;
+    }
+
+    .bar.show ul{
+        flex-direction: column;
+        width: 100%;
     }
 
     .burger{
